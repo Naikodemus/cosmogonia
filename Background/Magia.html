@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="naikodemus" />
+<meta name="generator" content="Emacs 24.4.1 running Fountain Mode 1.5.0" />
+<title>Magia, apuntes</title>
+<style type="text/css">
+@page {
+    size: a4;
+    margin-top: 1in;
+    margin-right: 1in;
+    margin-bottom: 0.5in;
+    margin-left: 1.5in;
+}
+
+#title-page {
+    page: title;
+    margin: 0 auto;
+    width: 6in;
+    clear: both;
+    page-break-after: always;
+}
+
+#screenplay {
+    margin: 0 auto;
+    width: 6in;
+    clear: both;
+    counter-reset: page 1;
+    page: screenplay;
+}
+
+@media print {
+    #title {
+        margin-top: 3.5in;
+        margin-bottom: 4in;
+    }
+}
+
+#title-page #title {
+    text-align: center;
+}
+
+#title-page #title img {
+    width: 100%;
+}
+
+#title-page #left {
+    width: 50%;
+    float: left;
+}
+
+#title-page #right {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+#title h1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@page screenplay {
+    @top-right-corner {
+        font-family: 'Courier Screenplay','Courier Prime','monospace';
+        font-size: 12pt;
+        content: counter(page)".";
+        vertical-align: bottom;
+        padding-bottom: 1em;
+    }
+    @bottom-left {
+        font-family: 'Courier Screenplay','Courier Prime','monospace';
+        font-size: 12pt;
+        content: string(dialog-more, last);
+        margin-left: 2in;
+        vertical-align: top;
+    }
+}
+
+@page screenplay:first {
+    @top-right-corner {
+        content: normal;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 12pt;
+}
+
+body {
+    font-family: 'Courier Screenplay','Courier Prime','monospace';
+    font-size: 12pt;
+    line-height: 1;
+}
+
+hr {
+    visibility: hidden;
+    page-break-after: always;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+span.strikethrough {
+    text-line-through-style: solid;
+}
+
+mark {
+    background-color: inherit;
+}
+
+mark:before {
+    content: '*';
+    width: 0.5in;
+    position: absolute;
+    right: 0in;
+}
+
+del:before {
+    content: '*';
+    width: 0.5in;
+    position: absolute;
+    right: 0in;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0in;
+    width: auto;
+}
+
+h2.scene-heading {
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    page-break-after: avoid;
+}
+
+p.action {
+    white-space: pre-wrap;
+    orphans: 2;
+    widows: 2;
+}
+
+p.center {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+p.trans {
+    margin-left: 4in;
+    width: 2in;
+    page-break-before: avoid;
+}
+
+p.note {
+    display: none;
+}
+
+p.section {
+    display: none;
+}
+
+p.synopsis {
+    display: none;
+}
+
+p.page-break {
+    visibility: hidden;
+    page-break-after: always;
+}
+
+table.dialog {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1in;
+    border-spacing: 0px;
+    width: 4in;
+    string-set: character attr(character) dialog-more "(MORE)";
+}
+
+table.dialog:after {
+    display: table-row;
+    content: "";
+    string-set: dialog-more "";
+}
+
+tr.character {
+    page-break-after: avoid;
+}
+
+tr.dialog {
+    orphans: 2;
+    widows: 2;
+}
+
+tr.paren {
+    orphans: 2;
+    widows: 2;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+}
+
+td {
+    display: block;
+    padding: 0;
+}
+
+td.character {
+    margin-left: 1in;
+}
+
+td.dialog {
+    width: 3.5in;
+}
+
+td.paren {
+    margin-left: 0.6in;
+    text-indent: -0.6em;
+    width: 2in;
+}
+
+table.dialog caption.character {
+    margin-left: 1in;
+    text-align: left;
+    caption-side: top;
+    caption-page: following;
+    content: string(character, last)" (CONT'D)";
+}
+</style>
+</head>
+<body>
+<section id="title-page">
+<div id="title">
+<h1>Magia, apuntes</h1>
+<p>estrito por</p>
+<p>naikodemus</p>
+</div>
+<div id="left">
+<p>I.</p>
+<p>agosto 31, 2015</p>
+<p></p>
+</div>
+<div id="right">
+<p>naikodemus@gmail.com</p>
+</div>
+</section>
+<section id="screenplay">
+<p class="center">SOBRE LA MAGIA</p>
+<p class="action">Documento para juntas las ideas sobre la magia a emplear en el sistema "Hitos ampliado". 
+</p>
+</section>
+</body>
+</html>
