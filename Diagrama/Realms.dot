@@ -1,0 +1,1058 @@
+# dot -Tpdf -O  Realms.dot
+
+# NOS QUEDAMOS EN LA LÍNEA 436 DE ESTE ARCHIVO Y LA LINEA 613 DEL ANTIGUO
+
+graph G {
+
+    # Breve nota:
+    # Los niveles de realidad son recursivos,
+    # y de "geometría" esférica. Ningún plano es el central
+    # o el límite.
+
+    graph [ label = "Cosmogonía",
+            pad="1",
+            ranksep="1.75",
+            nodesep="0.25"
+            #sep=2,
+            center=true,
+            #splines=polyline,
+            splines=ortho,
+            overlap=scale,
+            fontcolor=forestgreen,
+            fontsize=60,
+            #fontname="FFErikrighthand-Caps"
+            fontname="Essays1743"
+            # root="Mansiones"
+          ];
+          
+    node [ fontname="Essays1743" ];
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+    # Eternos
+    node [
+          style=filled,
+          color=forestgreen,
+          shape=box,
+          fixedsize=false,
+          fontcolor=white,
+          #fontname="FFErikrighthand-Caps",
+          fontsize=38
+         ];
+
+         "Destino";
+         "Muerte";
+         "Sueño";
+         "Destrucción";
+         "Deseo";
+         "Desespero";
+         "Delirio";
+
+    # Reinos / Planos
+    node [ shape=rectangle,
+           style=bold,
+           color=forestgreen,
+           fontcolor=forestgreen,
+           fontsize=38,
+           #fontname="FFErikrighthand-Caps",
+         ];
+
+         "Caos";
+         "Void" [label="La Nada"];
+         "Dioses Mayores";
+         "Dioses Menores";
+         "Dioses Errantes";
+         "Orden";
+             "Mansiones";
+             "Cosmos Dei";
+                 "Real";
+                 "Yggdrasil";
+                    "Midgard";
+                    "Asgard";
+                    "Helfheim";
+                        "Helheim";
+                    "Muspelheim";
+                    "Svartálfaheim";
+                    "Alfheim";
+                    "Vanaheim";
+                    "Jötunheim";
+             "Ciudad de Plata" [style=filled, color=goldenrod];
+         "Cosmos Luciferi";
+         "Infiernos";
+         "Reino Feérico";
+         "Penumbra";
+            "Umbra";
+         "El Velo";
+            "Metropolis" [style=filled, color=goldenrod];
+         "Las Sombras";
+            "La Tempestad";
+                "Tierras Muertas";
+         "Olvido";
+         "Transcendencia";
+         "Sintiempo";
+
+    # node [ fontname="FFJustlefthand-Caps" ];
+
+    # Deidades
+    node [
+          style=filled,
+          color=steelblue,
+          shape=doublecircle,
+          fixedsize=true,
+          width=1.5,
+          fontcolor=black,
+          fontsize=20
+         ];
+
+         "YHVH";
+         "Demiurgo";
+         "Tejedoras";
+            "Wyld";
+            "Weaver";
+            "Wyrm";
+         "Azathoth";
+         "La\nPresencia";
+         "Intrusos";
+         "Antiguos";
+         "Dioses\nExteriores";
+         "Primigenios";
+         "Odín";
+         "Astaroth";
+         
+    # Lugares
+    node [
+          style=filled,
+          color=goldenrod,
+          shape=square,
+          fixedsize=true,
+          width=1.5,
+          fontcolor=black,
+          fontsize=18
+         ];
+
+         "Embajadas" [shape=box];
+         "Ciudades" [shape=box];
+         "Redlights";
+         "El\nBarco";
+         "Valaskjálf";
+         "Invierno";
+         "Verano";
+         "Palacio";
+         "Páramos";
+         "El Molino";
+         "La Mesa";
+         "La\nPosada";
+         "Gjöll";
+         "La\nMontaña";
+         "Las Tres\nPiedras";
+         "Utgard";
+         "Iving";
+         "Estigia";
+         "Metropolis";
+         "Las\nRuinas";
+         "La\nMáquina";
+         "La\nCacería";
+         "Ciudadelas";
+         "Necropolis";
+         "Gaia";
+         "Inferno";
+         "Posesiones";
+         "Nihil" [color=black, fontcolor=white, shape=polygon, sides=6, fixedsize=true, width=0.9, height=0.75];
+         "Necropolis\nLitharge";
+         "Simas\nEternas";
+         "El\nDesierto";
+         "Costas\nLejanas";
+         "Maelstrom" [color=black, fontcolor=white, shape=polygon, sides=6, fixedsize=true, width=1.2, height=1];
+         "El Lago";
+         "El\nLaberinto";
+         "Los Nidos";
+         "Ktonor";
+         "El Dédalo";
+         "La\nTumba";
+         "La Capilla\nVacía";
+         "Mausoleos";
+         "Templo de\nObsidiana";
+         "El Cubo";
+         "Soterrados";
+         "El\nAbismo";
+         "La\nFrontera";
+         "Purgatorio";
+         "Sol Negro";
+         "Ciudadelas\nNegras";
+         "Vortex";
+         "El\nHospital";
+         "Arkham";
+         "Lugares\nBlandos";
+         "Fiddler's\nGreen";
+
+     # Criaturas
+     node [
+           style=dashed,
+           color=black,
+           shape=box,
+           fixedsize=false,
+           fontcolor=black,
+           fontsize=18
+          ]
+
+          "Vampiros";
+          "Hadas";
+          "Demonios" 
+            [ style=filled,
+              color=red,
+              fontcolor=black
+            ];
+          "Succubi";
+          "Metamorfos";
+          "Changelling";
+          "Ángeles";
+          "Ángeles Caídos";
+          "Humanos";
+          "Dotados";
+          "Mortales";
+          "Magi";
+          "Hechiceros"
+          "Brujos";
+          "Nigromantes";
+          "Espíritus";
+          "Lilim";
+          "Gigantes\nde Fuego";
+          "Elfos\nOscuros";
+          "Elfos\nLuminosos";
+          "Enanos\nNórdicos";
+          "Vanir";
+          "Æsir";
+          "Gigantes de\nHielo";
+          "Gigantes de\nRoca";
+          "Arcontes"
+          "Ángeles\nde Muerte";
+          "Espectros";
+          "Encarnados";
+          "Poseídos";
+          "Límites";
+          "Nachtkäfer";
+          "Chiquillos";
+          "Larvae";
+          "Razidas";
+          "Nefaritas";
+          "Psilositas";
+          "Lictores";
+          "Azghouls";
+          "Wolvens";
+          "Ferocci";
+          "Techrones";
+          "Zelotes";
+          "Acrotidas";
+          "Plaga";
+          "Corpofagi";
+          "Phisifagi";
+          "Furias";
+          "Cairath";
+          "Libiths";
+          "Darthea";
+          "Gynachides";
+          "Aetats";
+          "Aspecti";
+          "Mi-Go";
+
+     node [ style=filled,
+            color=red,
+            fontcolor=black
+           ];
+
+           "Demonios";
+                "Invunche";
+           "Alucinaciones";
+
+     # Organizaciones
+     node [
+           style=filled,
+           color=brown,
+           shape=circle,
+           fixedsize=true,
+           width=1.5,
+           fontcolor=white,
+           fontsize=18
+          ]
+
+          "Corte\nRoja";
+          "Corte\nNegra";
+          "Corte\nBlanca";
+          "Corte\nde Jade";
+          "H. de\nSan Gil";
+          "Concilio\nBlanco";
+          "Tribus\nGarou";
+          "C. de la\nCruz";
+          "La\nJerarquía";
+          "Lores";
+          "Herejes";
+          "Barqueros";
+          "Legiones";
+          "Fasces";
+          "Achlytidas";
+          "Sirvientes\nde Cairath";
+          "Socidedad\nDupin";
+
+
+     node [
+           style=filled,
+           color=indigo,
+           shape=circle,
+           fixedsize=true,
+           width=1.5,
+           fontcolor=white,
+           fontsize=18
+          ]
+
+          "Denarios\nNegros";
+          "Consejo\nNegro";
+
+          "Talamasca";
+          "Templarios";
+          "Illuminati";
+          "Dragones";
+          "Logia\nCrepúsculo\nde Plata";
+
+    # Individuos
+    node [
+          shape = rectangle,
+          color = black,
+          style = filled,
+          fixedsize = false
+         ]      
+
+         "Bastón Negro";
+         "Caín";
+         "Lucifer";
+            "Imogen";
+
+         "Sirota";
+         "Furcifer";
+          "Mnemoth";
+         "Mammon";
+         "Falkaroth"
+         "Pazuzu";
+         "Lamashtu";
+
+         "Belloc";
+         "Gabriel";
+            "Miguel";
+         "Heimdall";
+         "Hela";
+         "Garm";
+         "Nídhöggr";
+         "Loki";
+         "Malkuth";
+         "La Que\nAguarda";
+         "Achlys";
+         "El\nGuardián";
+         "Los Tres\nDioses";
+         "Athrax";
+         "Príncipes\ndel Sueño";
+
+         "Jacob Shaw";
+         "Felix Faust";
+         "Papa\nMidnite";
+
+         "Gilbert";
+         "The\nRaven";
+
+    # Sabores
+    node [
+          style=solid,
+          color=red3,
+          shape=box,
+          fixedsize=false,
+          fontcolor=black,
+          fontsize=18
+         ]
+
+         "Sefirot";
+            "4 Mundos";
+            "Emanación";
+            "Creación";
+            "Formación";
+            "Acción";
+         "Qlifoth";
+
+         "Arcanoi";
+         "Hermetica";
+         "Locura";
+         
+         "Ansias";
+            "Sed";
+            "Hambre";
+            "Sexo";
+            "Refugio";
+
+         "Afectos";
+            "Virtudes";
+            "Vicios";
+            "Control";
+            "Abandono";
+
+         "Estados";
+            "Éxtasis";
+            "Goce";
+            "Serenidad";
+            "Admiración";
+            "Confianza";
+            "Aceptación";
+            "Terror";
+            "Miedo";
+            "Aprensión";
+            "Asombro";
+            "Sorpresa";
+            "Distracción";
+            "Dolor";
+            "Tristeza";
+            "Pensatividad";
+            "Aborrecimiento";
+            "Disgusto";
+            "Aburrimiento";
+            "Rabia";
+            "Enfado";
+            "Molestia";
+            "Vigilancia";
+            "Anticipación";
+            "Curiosidad";
+            "Serenidad";
+            "Aceptación";
+            "Aprensión";
+            "Distracción";
+            "Pensatividad";
+            "Aburrimiento";
+            "Molestia";
+            "Curiosidad";
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# RELACIÓN DE PERTENENCIA DE LOS REINOS
+
+edge [ style = bold,
+       color = forestgreen,
+       arrowhead = none,
+       arrowtail = none
+     ];
+
+     "Caos" -- "Void";
+     "Void" -- "Sintiempo";
+     "Void" -- "Dioses Mayores";
+         "Dioses Mayores" -- "Demiurgo";
+         "Dioses Mayores" -- "Azathoth";
+         "Dioses Mayores" -- "Tejedoras";
+         "Dioses Mayores" -- "Intrusos";
+         "Dioses Mayores" -- "Antiguos";
+         "Dioses Mayores" -- "Dioses\nExteriores";
+     "Void" -- "Dioses Menores";
+         "Dioses Menores" -- "Odín";
+         "Dioses Menores" -- "Primigenios";
+     "Caos" -- "Dioses Errantes";
+     "Void" -- "Dioses Errantes";
+         "Dioses Errantes" -- "YHVH";
+         "Dioses Errantes" -- "Lucifer";
+     "Void" -- "Cosmos Luciferi";
+     "Void" -- "Infiernos";
+     "Void" -- "Reino Feérico";
+     "Void" -- "Penumbra";
+        "Penumbra" -- "Umbra";
+     "Void" -- "El Velo";
+        "El Velo" -- "Metropolis";
+     "Void" -- "Las Sombras";
+         "Las Sombras" -- "La Tempestad";
+            "La Tempestad" -- "Tierras Muertas";
+     "Void" -- "Orden";
+     "Orden"-- "Mansiones";
+     "Orden" -- "Cosmos Dei";
+         "Cosmos Dei" -- "Real";
+         "Cosmos Dei" -- "Yggdrasil";
+         "Yggdrasil" -- "Midgard";
+         "Yggdrasil" -- "Asgard";
+         "Yggdrasil" -- "Helfheim";
+            "Helfheim" -- "Helheim";
+         "Yggdrasil" -- "Muspelheim";
+         "Yggdrasil" -- "Svartálfaheim";
+         "Yggdrasil" -- "Alfheim";
+         "Yggdrasil" -- "Vanaheim";
+         "Yggdrasil" -- "Jötunheim";
+     "Orden" -- "Ciudad de Plata";
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# QUIÉN Y QUÉ ESTÁ DÓNDE
+
+edge [ style = solid,
+       color = goldenrod,
+       arrowhead = none,
+       arrowtail = none
+     ];
+
+"Sueño" -- "Lugares\nBlandos";
+"Sueño" -- "The\nRaven";
+"Lugares\nBlandos" -- "Fiddler's\nGreen";
+
+"Sintiempo" -- "Achlys";
+"Sintiempo" -- "Aetats";
+"Sintiempo" -- "Aspecti";
+"Sintiempo" -- "Mi-Go";
+
+"Mansiones" -- "Redlights";
+"Mansiones" -- "La\nPosada";
+"Mansiones" -- "La\nMontaña";
+"Mansiones" -- "El\nBarco";
+"Mansiones" -- "La Mesa";
+
+"La\nMontaña" -- "Loki";
+
+"Cosmos Dei" -- "Ángeles";
+"Cosmos Dei" -- "Ángeles Caídos";
+"Cosmos Dei" -- "Demonios";
+
+"Real" -- "Embajadas";
+"Real" -- "Ciudades";
+
+"Real" -- "Caín";
+
+"Real" -- "Encarnados";
+
+"Real" -- "Humanos";
+"Real" -- "Vampiros";
+"Real" -- "Metamorfos";
+"Real" -- "Changelling";
+"Real" -- "Mortales";
+"Real" -- "Dotados";
+"Real" -- "Magi";
+"Real" -- "Hechiceros";
+"Real" -- "Brujos";
+"Real" -- "Nigromantes";
+
+"Real" -- "Tribus\nGarou";
+
+"Real" -- "Corte\nRoja";
+"Real" -- "Corte\nNegra";
+"Real" -- "Corte\nBlanca";
+"Real" -- "Corte\nde Jade";
+"Real" -- "H. de\nSan Gil";
+"Real" -- "Concilio\nBlanco";
+"Real" -- "Denarios\nNegros";
+"Real" -- "C. de la\nCruz";
+"Real" -- "Consejo\nNegro";
+"Real" -- "Bastón Negro";
+"Real" -- "Socidedad\nDupin";
+
+"Real" -- "Talamasca";
+"Real" -- "Templarios";
+"Real" -- "Illuminati";
+"Real" -- "Dragones";
+"Real" -- "Logia\nCrepúsculo\nde Plata";
+
+"Real" -- "Límites";
+"Real" -- "Nachtkäfer";
+"Real" -- "Larvae";
+"Real" -- "Alucinaciones";
+
+"Real" -- "Mi-Go";
+
+"Yggdrasil" -- "Heimdall";
+"Yggdrasil" -- "Iving";
+"Asgard" -- "Æsir";
+"Asgard" -- "Valaskjálf";
+"Helfheim" -- "Nídhöggr";
+"Helheim" -- "Hela";
+"Helheim" -- "Garm";
+"Helheim" -- "Gjöll";
+"Muspelheim" -- "Gigantes\nde Fuego";
+"Svartálfaheim" -- "Elfos\nOscuros";
+"Svartálfaheim" -- "Enanos\nNórdicos";
+"Alfheim" -- "Elfos\nLuminosos";
+"Vanaheim" -- "Vanir";
+"Jötunheim" -- "Utgard";
+"Jötunheim" -- "Gigantes de\nHielo";
+"Jötunheim" -- "Gigantes de\nRoca";
+
+"Infiernos" -- "Páramos";
+"Infiernos" -- "El Molino";
+"Infiernos" -- "Las Tres\nPiedras";
+"Las Tres\nPiedras" -- "Loki";
+
+"Ciudad de Plata" -- "La\nPresencia";
+"Ciudad de Plata" -- "Ángeles";
+
+"Reino Feérico" -- "Hadas";
+"Reino Feérico" -- "Invierno";
+"Reino Feérico" -- "Verano";
+
+"Cosmos Luciferi" -- "Palacio";
+"Cosmos Luciferi" -- "Lilim";
+"Cosmos Luciferi" -- "Belloc";
+
+"Umbra" -- "Espíritus";
+
+"El Velo" -- "Astaroth";
+"El Velo" -- "Malkuth";
+"El Velo" -- "Arcontes";
+"El Velo" -- "Lictores";
+"El Velo" -- "Ángeles\nde Muerte";
+"El Velo" -- "Corpofagi";
+"El Velo" -- "Príncipes\ndel Sueño";
+"El Velo" -- "Alucinaciones";
+"El Velo" -- "Libiths";
+"El Velo" -- "Darthea";
+"El Velo" -- "Gynachides";
+"El Velo" -- "Aetats";
+"El Velo" -- "Aspecti";
+
+"El Velo" -- "Legiones";
+
+"El Velo" -- "Inferno";
+"El Velo" -- "Gaia";
+"El Velo" -- "Necropolis";
+"El Velo" -- "Ciudadelas";
+"El Velo" -- "Los Nidos";
+"El Velo" -- "El\nLaberinto";
+"El Velo" -- "La\nFrontera";
+"El Velo" -- "Vortex";
+"El Velo" -- "El\nHospital";
+
+"Inferno" -- "Purgatorio";
+"Inferno" -- "Sol Negro";
+"Inferno" -- "Ciudadelas\nNegras";
+
+"Inferno" -- "Nefaritas";
+"Purgatorio" -- "Razidas";
+
+"Vortex" -- "Phisifagi";
+
+"Los Nidos" -- "Razidas";
+
+"El\nLaberinto" -- "Chiquillos";
+"El\nLaberinto" -- "Psilositas";
+"El\nLaberinto" -- "Espectros";
+"El\nLaberinto" -- "Larvae";
+
+"Metropolis" -- "Mausoleos";
+"Mausoleos" -- "Los Tres\nDioses";
+"Metropolis" -- "Templo de\nObsidiana";
+"Metropolis" -- "Athrax";
+
+"Metropolis" -- "Illuminati";
+"Metropolis" -- "Logia\nCrepúsculo\nde Plata";
+
+"Metropolis" -- "Límites";
+"Metropolis" -- "Encarnados";
+"Metropolis" -- "Larvae";
+"Metropolis" -- "Nachtkäfer";
+"Metropolis" -- "Azghouls";
+"Metropolis" -- "Corpofagi";
+
+"Metropolis" -- "Las\nRuinas";
+"Metropolis" -- "La\nMáquina";
+"Metropolis" -- "La\nCacería";
+"Metropolis" -- "La\nTumba";
+"Metropolis" -- "El Cubo";
+"Metropolis" -- "Soterrados";
+"Metropolis" -- "El\nAbismo";
+
+"La\nCacería" -- "Wolvens";
+"La\nCacería" -- "Ferocci";
+
+"La\nMáquina" -- "Techrones";
+"La\nMáquina" -- "Mi-Go";
+"La\nTumba" -- "La Capilla\nVacía";
+"La Capilla\nVacía" -- "El\nGuardián";
+
+"Soterrados" -- "Achlytidas";
+"Soterrados" -- "Zelotes";
+
+"Ciudadelas" -- "Acrotidas";
+
+"El\nAbismo" -- "Plaga";
+
+"Metropolis" -- "Ktonor";
+"Ktonor" -- "El Dédalo";
+"El Dédalo" -- "La Que\nAguarda";
+"La Que\nAguarda" -- "Achlys";
+
+"Ktonor" -- "Mi-Go";
+"Ciudadelas\nNegras" -- "Mi-Go";
+
+"Las Sombras" -- "Arcanoi"
+"Las Sombras" -- "Posesiones"
+"Las Sombras" -- "Nihil"
+
+"La Tempestad" -- "Nihil";
+"La Tempestad" -- "Estigia";
+"La Tempestad" -- "El Lago";
+"La Tempestad" -- "Espectros";
+"La Tempestad" -- "El\nLaberinto";
+"La Tempestad" -- "Barqueros";
+"La Tempestad" -- "Herejes";
+"La Tempestad" -- "La\nJerarquía";
+"La Tempestad" -- "Lores";
+"La Tempestad" -- "Fasces";
+"La Tempestad" -- "Legiones";
+"La Tempestad" -- "Necropolis";
+"La Tempestad" -- "Ciudadelas";
+"La Tempestad" -- "Simas\nEternas";
+"La Tempestad" -- "Costas\nLejanas";
+"La Tempestad" -- "Maelstrom";
+
+"La\nJerarquía" -- "Estigia";
+"La\nJerarquía" -- "Necropolis";
+
+"Herejes" -- "Posesiones";
+
+"Tierras Muertas" -- "Nihil";
+"Tierras Muertas" -- "Necropolis\nLitharge";
+"Tierras Muertas" -- "El\nDesierto";
+
+"Ciudadelas" -- "Arcontes";
+
+"Necropolis" -- "Ángeles\nde Muerte";
+
+"Inferno" -- "Astaroth";
+"Inferno" -- "Encarnados";
+
+"Gaia" -- "Encarnados";
+
+"EL\nAbismo" -- "Mi-Go";
+
+"El\nHospital" -- "Furias";
+"El\nHospital" -- "Sirvientes\nde Cairath";
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# RELACIÓN DE SABORES
+
+edge [ style = solid,
+       color = red3,
+       arrowhead = none,
+       arrowtail = none
+     ];
+
+"El Velo" -- "Sefirot";
+"El Velo" -- "Qlifoth";
+
+"Sefirot" -- "Qlifoth";
+"Sefirot" -- "4 Mundos";
+"4 Mundos" -- "Emanación";
+"4 Mundos" -- "Creación";
+"4 Mundos" -- "Formación";
+"4 Mundos" -- "Acción";
+
+"Arcanoi" -- "Sefirot";
+"Arcanoi" -- "Qlifoth";
+
+"La Mesa" -- "Hermetica";
+
+"Delirio" -- "Locura";
+"Locura" -- "Furias";
+"Locura" -- "Sirvientes\nde Cairath";
+"Locura" -- "El\nHospital";
+"Locura" -- "Arkham";
+
+"Ansias" -- "Sed";
+"Ansias" -- "Hambre";
+"Ansias" -- "Sexo";
+"Ansias" -- "Refugio";
+
+"Virtudes" -- "Afectos";
+"Vicios" -- "Afectos";
+"Control" -- "Afectos";
+"Abandono" -- "Afectos";
+
+"Afectos" -- "Estados";
+
+"Estados" -- "Éxtasis" -- "Goce" -- "Serenidad";
+"Estados" -- "Admiración" -- "Confianza" -- "Aceptación";
+"Estados" -- "Terror" -- "Miedo" -- "Aprensión";
+"Estados" -- "Asombro" -- "Sorpresa" -- "Distracción";
+"Estados" -- "Dolor" -- "Tristeza" -- "Pensatividad";
+"Estados" -- "Aborrecimiento" -- "Disgusto" -- "Aburrimiento";
+"Estados" -- "Rabia" -- "Enfado" -- "Molestia";
+"Estados" -- "Vigilancia" -- "Anticipación" -- "Curiosidad";
+
+"Serenidad" -- "Optimismo";
+"Serenidad" -- "Amor";
+"Aceptación" -- "Amor";
+"Aceptación" -- "Sumisión";
+"Aprensión" -- "Sumisión";
+"Aprensión" -- "Temor";
+"Distracción" -- "Temor";
+"Distracción" -- "Reprobación";
+"Pensatividad" -- "Reprobación";
+"Pensatividad" -- "Remordimiento";
+"Aburrimiento" -- "Remordimiento";
+"Aburrimiento" -- "Desprecio";
+"Molestia" -- "Desprecio";
+"Molestia" -- "Agresión";
+"Curiosidad" -- "Agresión";
+"Curiosidad" -- "Optimismo";
+
+# # #
+"Ángeles" -- "Virtudes";
+"Demonios" -- "Vicios";
+
+"Succubi" -- "Sexo";
+
+"Vampiros" -- "Sed";
+
+"Razidas" -- "Dolor";
+"Nefaritas" -- "Remordimiento";
+"Corpofagi" -- "Hambre";
+"Libiths" -- "Sexo";
+"Darthea" -- "Éxtasis";
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Relaciones entre GRUPOS / INDIVIDUOS
+
+edge [ style = dashed,
+       color = darkgoldenrod4,
+       arrowhead = none,
+       arrowtail = none
+     ];
+
+"La\nPresencia" -- "Sefirot";
+
+"Sueño" -- "Príncipes\ndel Sueño";
+"Delirio" -- "Furias";
+
+"Ángeles" -- "Ángeles Caídos";
+"Ángeles" -- "C. de la\nCruz";
+
+"Ángeles" -- "Gabriel";
+"Ángeles" -- "Miguel";
+
+"Ángeles Caídos" -- "Palacio";
+"Ángeles Caídos" -- "Denarios\nNegros";
+"Ángeles Caídos" -- "Consejo\nNegro";
+"Ángeles Caídos" -- "Imogen";
+
+"Espíritus" -- "Gaia";
+"Espíritus" -- "Metamorfos";
+
+"Lucifer" -- "Belloc";
+
+"Demonios" -- "Succubi";
+"Demonios" -- "Denarios\nNegros";
+
+"Demonios" -- "Sirota";
+"Demonios" -- "Pazuzu";
+"Demonios" -- "Lamashtu";
+
+"Demonios" -- "Furcifer";
+"Demonios" -- "Mnemoth";
+"Demonios" -- "Mammon";
+"Demonios" -- "Falkaroth";
+
+"Demonios" -- "Invunche";
+
+"Metamorfos" -- "Tribus\nGarou";
+"Metamorfos" -- "Gaia";
+
+"Espíritus" -- "Poseídos";
+
+"Changelling" -- "Hadas";
+
+"Hadas" -- "Verano";
+"Hadas" -- "Invierno";
+
+"Odín" -- "Æsir";
+
+"Caín" -- "Vampiros";
+
+"Vampiros" -- "Corte\nNegra";
+"Vampiros" -- "Corte\nRoja";
+"Vampiros" -- "Corte\nBlanca";
+"Vampiros" -- "Corte\nde Jade";
+"Vampiros" -- "H. de\nSan Gil";
+
+"Humanos" -- "Mortales";
+"Humanos" -- "Dotados";
+
+"Mortales" -- "H. de\nSan Gil";
+"Mortales" -- "C. de la\nCruz";
+"Mortales" -- "Talamasca";
+"Mortales" -- "Illuminati";
+"Mortales" -- "Templarios";
+"Mortales" -- "Dragones";
+"Mortales" -- "Logia\nCrepúsculo\nde Plata";
+"Mortales" -- "Socidedad\nDupin";
+
+"Mortales" -- "Brujos";
+
+"Dotados" -- "Talamasca";
+"Dotados" -- "Illuminati";
+"Dotados" -- "Templarios";
+"Dotados" -- "Dragones";
+"Dotados" -- "Logia\nCrepúsculo\nde Plata";
+"Dotados" -- "C. de la\nCruz";
+"Dotados" -- "Magi";
+"Dotados" -- "Hechiceros";
+"Dotados" -- "Brujos";
+"Dotados" -- "Nigromantes";
+"Dotados" -- "Consejo\nNegro";
+
+"Magi" -- "Concilio\nBlanco";
+"Magi" -- "Templarios";
+
+"Brujos"-- "Consejo\nNegro";
+"Brujos"-- "Dragones";
+
+"Brujos"-- "Papa\nMidnite";
+
+"Hechiceros" -- "Consejo\nNegro";
+"Hechiceros" -- "Dragones";
+"Hechiceros" -- "Papa\nMidnite";
+
+"Nigromantes" -- "Consejo\nNegro";
+"Nigromantes" -- "Illuminati";
+
+"Nigromantes" -- "Jacob Shaw";
+"Nigromantes" -- "Felix Faust";
+"Nigromantes" -- "Papa\nMidnite";
+
+"Lores" -- "Legiones";
+"Lores" -- "Fasces";
+"La\nJerarquía" -- "Legiones";
+"La\nJerarquía" -- "Fasces";
+
+"Arcontes" -- "Lictores";
+"Dotados" -- "Límites";
+
+"Concilio\nBlanco" -- "Bastón Negro";
+
+"Garm" -- "Hela";
+
+"Arcontes" -- "Acrotidas";
+"Libiths" -- "Succubi";
+"Darthea" -- "Poseídos";
+"Darthea" -- "Espíritus";
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Relaciones de SENTIDO / PROPÓSITO
+
+edge [ style = solid,
+       color = purple,
+       arrowhead = none,
+       arrowtail = none
+     ];
+
+"Orden" -- "Weaver";
+"Caos" -- "Delirio";
+"Caos" -- "Destrucción";
+"Caos" -- "Desespero";
+"Caos" -- "Deseo";
+"Caos" -- "Sueño";
+"Caos" -- "Sintiempo";
+
+"Caos" -- "Achlys";
+
+"Olvido" -- "Destino";
+
+"Destino" -- "Transcendencia";
+"Muerte" -- "Destino";
+"Muerte" -- "Destrucción";
+"Sueño" -- "Delirio";
+"Sueño" -- "Deseo";
+"Desespero" -- "Destrucción";
+"Desespero" -- "Delirio";
+
+"Sueño" -- "Dioses Menores";
+"Sueño" -- "Vortex";
+
+"Delirio" -- "El\nHospital";
+"Delirio" -- "Vortex";
+
+"Ángeles\nde Muerte" -- "Muerte";
+"El\nLaberinto" -- "Destino";
+"El Dédalo" -- "Destino";
+
+"Demiurgo" -- "Azathoth";
+"Demiurgo" -- "Tejedoras";
+"Demiurgo" -- "Arcontes";
+"Demiurgo" -- "La\nTumba";
+"Demiurgo" -- "El\nAbismo";
+
+"La\nPresencia" -- "La\nTumba";
+
+"Astaroth" -- "Ángeles\nde Muerte";
+"Malkuth" -- "Lictores";
+"Demiurgo" -- "Astaroth";
+
+"Wyld" -- "Maelstrom";
+"Wyrm" -- "Maelstrom";
+
+"Maelstrom" -- "Delirio";
+"Maelstrom" -- "Desespero";
+
+"Verano" -- "Embajadas";
+"Invierno" -- "Embajadas";
+
+"Achlys" -- "Achlytidas";
+"Achlys" -- "Aetats";
+"Achlys" -- "Aspecti";
+
+"Cairath" -- "Sirvientes\nde Cairath";
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# RELACIÓN DE EQUIVALENCIA
+
+edge [ style = bold,
+       color = red,#wheat3,
+       arrowhead = none,
+       arrowtail = none
+     ];
+
+"YHVH" -- "La\nPresencia";
+
+"Tejedoras" -- "Wyld";
+"Tejedoras" -- "Weaver";
+"Tejedoras" -- "Wyrm";
+
+"Midgard" -- "Real";
+
+"Nihil" -- "Maelstrom";
+
+"Maelstrom" -- "Caos";
+"Maelstrom" -- "El\nAbismo";
+"Maelstrom" -- "Vortex";
+
+"Vortex" -- "El\nHospital";
+
+"Achlys" -- "Olvido";
+
+"Encarnados" -- "Ángeles";
+"Encarnados" -- "Ángeles\nde Muerte";
+"Encarnados" -- "Demonios";
+"Encarnados" -- "Succubi";
+"Encarnados" -- "Espectros";
+"Encarnados" -- "Espíritus";
+"Encarnados" -- "Ángeles Caídos";
+"Encarnados" -- "Razidas";
+"Encarnados" -- "Alucinaciones";
+
+"Encarnados" -- "Libiths";
+"Encarnados" -- "Darthea";
+"Encarnados" -- "Gynachides";
+
+"Las Tres\nPiedras" -- "La\nMontaña";
+
+"Estigia" -- "Gjöll";
+"Estigia" -- "El Lago";
+
+"Metropolis" -- "Utgard";
+"Metropolis" -- "Ciudad de Plata";
+"Metropolis" -- "Ciudades";
+"Metropolis" -- "Ciudadelas";
+"Metropolis" -- "Estigia";
+"Metropolis" -- "Necropolis\nLitharge";
+
+"Fiddler's\nGreen" -- "Gilbert";
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+}
