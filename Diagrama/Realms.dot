@@ -9,7 +9,7 @@ graph G {
     # y de "geometría" esférica. Ningún plano es el central
     # o el límite.
 
-    graph [ label = "Cosmogonía",
+    graph [ label = "Cosmogonía II",
             pad="1",
             ranksep="1.75",
             nodesep="0.25"
